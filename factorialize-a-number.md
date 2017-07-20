@@ -22,6 +22,6 @@ factorialize(5);
 
 ```JavaScript
   function factorialize(num) {
-    return Array.from(new Array(num),(val,index)=>index+1).reduce((prev, curr) => prev * curr);
+    return Array.from(new Array(num),(val,index) => index + 1).reduce((prev, curr) => prev * curr);
   }
 ```  
