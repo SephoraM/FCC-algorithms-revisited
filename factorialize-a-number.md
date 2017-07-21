@@ -5,16 +5,16 @@
 *Original Working Version*
 
 ```JavaScript
-function factorialize(num) {
-var result = 1;    // starting with 1 because of the multiplication
-for (var i = 1; i <= num; i++) {
-  result *= i;
+  function factorialize(num) {
+    var result = 1;    // starting with 1 because of the multiplication
+    for (var i = 1; i <= num; i++) {
+      result *= i;
 
-}
-return result;
-}
+    }
+    return result;
+  }
 
-factorialize(5);
+  factorialize(5);
 ```
 
 *New Working Version*
@@ -22,6 +22,6 @@ factorialize(5);
 
 ```JavaScript
   function factorialize(num) {
-    return Array.from(new Array(num),(val,index)=>index+1).reduce((prev, curr) => prev * curr);
+    return Array.from(new Array(num),(value, index) => index + 1).reduce((prev, curr) => prev * curr, 1);
   }
 ```  
