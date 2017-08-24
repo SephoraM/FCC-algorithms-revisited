@@ -41,7 +41,7 @@ factorialize(5);
      if(num === 1) {
        return num;
      } else {
-       return num *= factorialize(num -1);
+       return num * factorialize(num - 1);
      }
    }
  ```
