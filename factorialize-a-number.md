@@ -33,3 +33,15 @@ factorialize(5);
     return Array.from(new Array(num),(val,index) => index + 1).reduce((prev, curr) => prev * curr);
   }
 ```
+
+ *Or using recursion*
+
+ ```JavaScript
+   function factorialize(num) {
+     if(num === 1) {
+       return num;
+     } else {
+       return num *= factorialize(num -1);
+     }
+   }
+ ```
